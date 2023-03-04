@@ -14,7 +14,6 @@ public class LoginUserTests {
 
     @Test
     public void checkLoginUser() {
-
         LoginUserBody data = new LoginUserBody();
         data.setEmail("eve.holt@reqres.in");
         data.setPassword("cityslicka");
@@ -32,7 +31,6 @@ public class LoginUserTests {
 
     @Test
     public void checkUnsuccessfulLoginUser() {
-
         UnsuccessfulLoginUserBody data = new UnsuccessfulLoginUserBody();
         data.setEmail("eve.holt@reqres.i");
         data.setPassword("cityslicka");

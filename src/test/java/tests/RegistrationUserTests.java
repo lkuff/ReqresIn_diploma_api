@@ -14,7 +14,6 @@ public class RegistrationUserTests {
 
     @Test
     public void checkRegisterUser() {
-
         RegistrationUserBody data = new RegistrationUserBody();
         data.setEmail("eve.holt@reqres.in");
         data.setPassword("pistol");
@@ -32,7 +31,6 @@ public class RegistrationUserTests {
 
     @Test
     public void checkUnsuccessfulRegisterUser() {
-
         UnsuccessfulRegistrationBody data = new UnsuccessfulRegistrationBody();
         data.setEmail("eve.holt@reqres.i");
         data.setPassword("pistol");

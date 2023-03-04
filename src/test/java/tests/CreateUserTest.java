@@ -13,7 +13,6 @@ public class CreateUserTest {
 
     @Test
     public void checkCreateUser() {
-
         CreateUserBody data = new CreateUserBody();
         data.setName("chamomile");
         data.setJob("qa");
