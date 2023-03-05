@@ -15,6 +15,8 @@
 
 ➠ [Отчет о результатах тестирования в Allure Report](#-отчет-о-результатах-тестирования-в-allure-report)
 
+➠ [Allure TestOps](#-Allure-TestOps)
+
 ➠ [Уведомления в Telegram с использованием бота](#-уведомления-в-telegram-с-использованием-бота)
 
 ## <a name="checkered_flag-покрытый-функционал"></a>:checkered_flag: Покрытый функционал
@@ -41,6 +43,7 @@
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="6%" title="Allure Report" src="images/logo/Allure_TO.svg">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
@@ -52,7 +55,7 @@
         State4: GitHub
         State5: Jenkins
         State6: Selenoid
-        State7: Allure Report
+        State7: Allure Report & Allure TestOps
         State8: Telegram
         State1 --> State2
         State2 --> State3
@@ -116,6 +119,23 @@ gradle clean test
 </p>
 
 [:arrow_up:Содержание](#bookmark_tabs-Содержание)
+
+## <img width="4%" title="TestOps" src="images/logo/Allure_TO.svg"> Allure [TestOps](https://allure.autotests.cloud/launch/19955)
+
+### Основной дашборд
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/TestOpsGraphs.png">
+</p>
+
+### Страница с тестами
+
+<p align="center">
+<img title="Allure Overview Dashboard" src="images/screenshots/TestOpsTests.png">
+</p>
+
+[:arrow_up:Содержание](#bookmark_tabs-Содержание)
+
 
 ## <img width="4%" title="Telegram" src="images/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
