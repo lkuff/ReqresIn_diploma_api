@@ -2,6 +2,7 @@ package tests;
 
 import models.createUser.CreateUserBody;
 import models.createUser.CreateUserResponse;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -11,6 +12,7 @@ import static specs.LoginSpecs.requestSpec;
 
 public class CreateUserTest {
 
+    @DisplayName("Create user")
     @Test
     public void checkCreateUser() {
         CreateUserBody data = new CreateUserBody();

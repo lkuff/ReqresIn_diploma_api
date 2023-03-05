@@ -4,6 +4,7 @@ import models.registrationUser.RegistrationUserBody;
 import models.registrationUser.RegistrationUserResponse;
 import models.registrationUser.UnsuccessfulRegistrationBody;
 import models.registrationUser.UnsuccessfulRegistrationUserResponse;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -11,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static specs.LoginSpecs.*;
 
 public class RegistrationUserTests {
-
+    @DisplayName("Register user")
     @Test
     public void checkRegisterUser() {
         RegistrationUserBody data = new RegistrationUserBody();
@@ -29,6 +30,7 @@ public class RegistrationUserTests {
         assertThat(response.getToken()).isEqualTo("QpwL5tke4Pnpja7X4");
     }
 
+    @DisplayName("Register user with incorrect data")
     @Test
     public void checkUnsuccessfulRegisterUser() {
         UnsuccessfulRegistrationBody data = new UnsuccessfulRegistrationBody();

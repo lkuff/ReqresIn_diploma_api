@@ -4,6 +4,7 @@ import models.loginUser.LoginUserBody;
 import models.loginUser.LoginUserResponse;
 import models.loginUser.UnsuccessfulLoginUserBody;
 import models.loginUser.UnsuccessfulLoginUserResponse;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
@@ -12,12 +13,12 @@ import static specs.LoginSpecs.*;
 
 public class LoginUserTests {
 
+    @DisplayName("Login user")
     @Test
     public void checkLoginUser() {
         LoginUserBody data = new LoginUserBody();
         data.setEmail("eve.holt@reqres.in");
         data.setPassword("cityslicka");
-
 
         LoginUserResponse response = given(requestSpec)
                 .body(data)
@@ -29,6 +30,7 @@ public class LoginUserTests {
         assertThat(response.getToken()).isEqualTo("QpwL5tke4Pnpja7X4");
     }
 
+    @DisplayName("Login user with incorrect data")
     @Test
     public void checkUnsuccessfulLoginUser() {
         UnsuccessfulLoginUserBody data = new UnsuccessfulLoginUserBody();
